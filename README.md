@@ -1,5 +1,5 @@
 # 🎶 Beatron 🎶
-🎵 **Open-Source decoder only generative pre-trained model to generate MIDI music!** 🎵
+🎵 **Open-Source - Decoder only GPT model to generate MIDI music!** 🎵
 &nbsp;  
 &nbsp;  
 🎉 Welcome to Beatron! 🎉 Dive deep into the power of GPT-like architectures for MIDI music generation. Everything you need is neatly packed within a Jupyter notebook for a quick start.
@@ -31,47 +31,47 @@
   - 🎹 Generate your own dataset with the [RemiPlus](https://miditok.readthedocs.io/en/latest/tokenizations.html#remiplus) tokenizer.
 &nbsp;  
 ### 🛠 Requirements
-- 🎹 MidiTok (For the rhythms of MIDI file tokenization)
+- 🎹 MidiTok (MIDI file tokenization)
 - 🧠 PyTorch (The brain behind model creation, training, and inference)
-- 📊 Pandas (For the symphony of data manipulation)
-- 🔢 NumPy (To hit the right notes with numerical operations)
+- 📊 Pandas (For data manipulation)
+- 🔢 NumPy (matrices and stuff)
 &nbsp;  
-#### Install with ease 📦:
+#### Don't forget to... 📦:
   ```pip install MidiTok```
 &nbsp;  
 ### 🗂 File Structure
 
 Navigating the repo is as easy as reading sheet music! 🎵
-- `output/`: 📁 Your saved symphonies (trained model checkpoints).
+- `output/`: 📁 Your saved outputs (trained model checkpoints).
 - `data_plots/`: 📊 Visual charts (training-related plots).
-- `encoding/`: 🔢 Encoded melodies ready for performance.
-- `preload/`: 🚀 Pre-tuned data structures for an encore during training.
+- `encoding/`: 🔢 Encoded midi tracks.
+- `preload/`: 🚀 Pre-tuned data structures to speed up dataset loading time.
 - `songs/`: 🎶 Freshly composed MIDI songs.
-- `logs/`: 📜 The chronicles (log files) of the training concert.
+- `logs/`: 📜 log files of the training.
 &nbsp;  
 &nbsp;  
 ## 🏋 Training the Model
 &nbsp;  
 1️⃣ Get things rocking with the `train` function:
    - Orchestrates the training process: from logging, data loading to the grand performance of training a Transformer model.
-   - Your music (model checkpoints) are safely stored in the `output/` directory.  
+   - Yourmodel checkpoints are safely stored in the `output/` directory every evaluation interval.  
    
-2️⃣ Dance along with the training rhythm using the `plot_and_save` function:
+2️⃣ Watch your model learn with the `plot_and_save` function:
    - Visual feedback (loss plots) will be stored in the `data_plots/` directory as the model learns.  
    
-3️⃣ Never miss a note! Record training details with the `save_training_info` function:
+3️⃣ Record training details with the `save_training_info` function:
    - Detailed logs and parameters are saved in the `data_plots/` as text documents for your reference.
 &nbsp;   
 &nbsp;  
 ## 🔬 Loading and Running Tests
 &nbsp;  
-1️⃣ Load up a maestro (trained model) with the `load_model` function:
-   - Just point it to your chosen maestro's address (trained model checkpoint) in the `output/` directory.  
+1️⃣ Load up a trained model with the `load_model` function:
+   - Just point it to your chosen trained model checkpoint in the `output/` directory.  
    
-2️⃣ Command your orchestra (generate MIDI songs) using the testing loop:
-   - Kick things off with an initial MIDI sequence from the `encoding/` directory.
-   - Your fresh compositions (generated MIDI songs) are saved in the `songs/` directory, ready for the world to hear!
+2️⃣ Compose with the AI overlords, generate MIDI songs using the testing loop:
+   - Dile things in with an initial MIDI sequence from the `encoding/` directory.
+   - Your fresh generated MIDI songs are saved in the `songs/` directory.
    
 &nbsp;  
-🎻 _Final note:_ Tweak the constants and parameters (like `VOCAB_SIZE`, `EMBED_DIM`, etc.) to your own taste. Let your creative spirit lead the way! 🎼
+🎻 _Final note:_ Tweak the constants and parameters (like `VOCAB_SIZE`, `EMBED_DIM`, etc.) to your own taste. 🎼
 &nbsp;  
